@@ -1,0 +1,101 @@
+@import "../colors/color.scss";
+
+.section-2{
+    width: 100%;
+    height: 100vh;
+    background-color: $backgroundColorSection2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10rem 0;
+
+    .section-heading{
+        font-weight: 900;
+        font-size: 12rem;
+        letter-spacing: 0.5rem;
+        color: $textColorTitle;
+        text-align: center;
+        text-transform: capitalize;
+        text-shadow: 0.3rem 0.3rem 0.3rem #000;
+        margin-top: -8%;//
+        margin-bottom: 8%;   
+    }
+    .cards-container{
+        display: flex;
+        justify-content: space-evenly;
+
+        
+        .card{
+            // width: 30rem;
+            width: 20rem;
+            background-color: $colorIcons;
+            padding: 4rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column;
+            box-shadow: 1rem 1rem 1rem #000;
+            position: relative;
+            transform: rotateY(20deg) skewX(-2deg);
+            transition: transform .5s, box-shadow .5s;
+            .card-img{
+                width: 100%;
+            }
+            .card-name{
+                font-size: 3rem;
+                font-weight: 900;
+                text-transform: uppercase;
+                letter-spacing: 00.5rem;
+                color: $colorName;
+                padding: 2rem 0;
+                text-shadow: 0.15rem 0.15rem 0.15rem #000;
+            }
+            .card-btn{
+                // width: 70%;
+                width: 90%;
+                background-color: $backgroundColorButton;
+                color: $textColorButton;
+                border-radius: 5rem;
+                font-size: 1.5rem;
+                font-weight: 800;
+                letter-spacing: 0.2rem;
+                text-transform: capitalize;
+                border: none;
+                padding: 0.5rem 0;
+                cursor: pointer;
+                box-shadow: -0.2rem -0.2rem -0.2rem #000;
+
+            }
+        }
+        .card::before{
+            content: "";
+            background-color: $backgroundColorQuad;
+            // background-color: red;
+            height: 100%;
+            width: 1rem;
+            position: absolute;
+            top: 0;
+            left: -1rem;
+            transform: skewY(45deg);
+            transform-origin: right;
+            box-shadow: -0.1rem -0.1rem -0.1rem #000;
+        }
+        .card::after{
+            content: "";
+            background-color: $backgroundColorQuad;
+            // background-color: red;
+            width: 100%;
+            height: 1rem;
+            position: absolute;
+            left: 0;
+            top: -1rem;
+            transform: skewX(45deg);
+            transform-origin: bottom;
+            box-shadow: -0.1rem -0.1rem -0.1rem #000;
+        }
+        .card:hover{
+            transform: rotateY(20deg) skewX(-2deg) translateY(-3rem);
+            box-shadow: 2rem 2rem 2rem #000;
+        }
+    }
+}

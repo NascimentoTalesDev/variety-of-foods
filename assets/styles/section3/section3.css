@@ -1,0 +1,99 @@
+.section-3 {
+  background-color: #333;
+  padding: 5rem 0;
+}
+.section-3 .section-heading {
+  font-weight: 900;
+  font-size: 12rem;
+  letter-spacing: 0.5rem;
+  color: #fff;
+  text-align: center;
+  text-transform: capitalize;
+  text-shadow: 0.3rem 0.3rem 0.3rem #000;
+  margin-top: -5%;
+}
+.section-3 .gallery {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.section-3 .gallery .gallery-link {
+  position: relative;
+  margin: 4rem 1rem;
+}
+.section-3 .gallery .gallery-link .food-img {
+  width: 24vw;
+  height: 15vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+  box-shadow: 0.3rem 0.3rem 0.1rem #e92929, 0.5rem 0.5rem 0.1rem #a2e946, 0.7rem 0.7rem 0.1rem #297ce9, 0.9rem 0.9rem 0.1rem #e92999;
+  transition: all 0.5s;
+}
+.section-3 .gallery .gallery-link .food-name {
+  position: absolute;
+  top: 2.5rem;
+  left: 2rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  color: #fff;
+  width: 0;
+  overflow: hidden;
+}
+.section-3 .gallery .gallery-link .food-description {
+  position: absolute;
+  bottom: 2vw;
+  left: 2rem;
+  width: 70%;
+  font-size: 1.1rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #fff;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s;
+}
+.section-3 .gallery .gallery-link:hover .food-img {
+  box-shadow: 1rem 1rem 0.1rem #e92929, 2rem 2rem 0.1rem #a2e946, 3rem 3rem 0.1rem #297ce9, 4rem 4rem 0.1rem #e92999;
+  filter: blur(0.5rem);
+  opacity: 0.5;
+  transform: scale(1.1);
+}
+.section-3 .gallery .gallery-link:hover .food-name {
+  width: 100%;
+  transition: width 1.5s 0.3s;
+}
+.section-3 .gallery .gallery-link:hover .food-description {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 1s 0.5s;
+}
+.section-3 .gallery .gallery-link::before {
+  content: "";
+  position: absolute;
+  top: 2vw;
+  left: 80%;
+  width: 0.2rem;
+  background-color: #fff;
+  height: 0;
+  transition: height 0.5s;
+  z-index: 10;
+}
+.section-3 .gallery .gallery-link:hover:before {
+  height: 80%;
+}
+.section-3 .gallery .gallery-link::after {
+  content: "";
+  position: absolute;
+  top: 30%;
+  left: 2rem;
+  height: 0.2rem;
+  background-color: #fff;
+  width: 0;
+  transition: width 0.5s;
+}
+.section-3 .gallery .gallery-link:hover::after {
+  width: 90%;
+}/*# sourceMappingURL=section3.css.map */
