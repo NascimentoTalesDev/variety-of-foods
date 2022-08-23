@@ -17,8 +17,7 @@
         text-align: center;
         text-transform: capitalize;
         text-shadow: 0.3rem 0.3rem 0.3rem #000;
-        margin-top: -8%;//
-        margin-bottom: 8%;   
+         
     }
     .cards-container{
         display: flex;
@@ -26,8 +25,7 @@
 
         
         .card{
-            // width: 30rem;
-            width: 20rem;
+            width: 30rem;
             background-color: $colorIcons;
             padding: 4rem;
             display: flex;
@@ -38,6 +36,7 @@
             position: relative;
             transform: rotateY(20deg) skewX(-2deg);
             transition: transform .5s, box-shadow .5s;
+
             .card-img{
                 width: 100%;
             }
@@ -45,14 +44,13 @@
                 font-size: 3rem;
                 font-weight: 900;
                 text-transform: uppercase;
-                letter-spacing: 00.5rem;
+                letter-spacing: 0.5rem;
                 color: $colorName;
                 padding: 2rem 0;
                 text-shadow: 0.15rem 0.15rem 0.15rem #000;
             }
             .card-btn{
-                // width: 70%;
-                width: 90%;
+                width: 80%;
                 background-color: $backgroundColorButton;
                 color: $textColorButton;
                 border-radius: 5rem;

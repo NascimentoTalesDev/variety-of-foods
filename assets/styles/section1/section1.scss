@@ -1,23 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap');
-
 @import '../colors/color.scss';
 
-// Common Styles
-
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    outline: none;
-    text-decoration: none;
-    font-family: 'nunito';
-    font-weight: 400;
-}
-html{
-    font-size: 62.5%; 
-}
-
-// End of Common Styles
 body{
  
     // background-color: $backgroundColor;
@@ -40,7 +22,7 @@ body{
                 text-align: center;
                 text-transform: capitalize;
                 text-shadow: 0.3rem 0.3rem 0.3rem #000;
-                margin-top: -10%;//
+                // margin-top: -10%;//
             }
 
             .section-1-icons{

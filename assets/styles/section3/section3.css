@@ -4,19 +4,19 @@
 }
 .section-3 .section-heading {
   font-weight: 900;
-  font-size: 12rem;
+  font-size: 10rem;
   letter-spacing: 0.5rem;
   color: #fff;
   text-align: center;
   text-transform: capitalize;
   text-shadow: 0.3rem 0.3rem 0.3rem #000;
-  margin-top: -5%;
 }
 .section-3 .gallery {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-evenly;
+  margin-top: 10rem;
 }
 .section-3 .gallery .gallery-link {
   position: relative;

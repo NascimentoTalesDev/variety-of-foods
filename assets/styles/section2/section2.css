@@ -15,15 +15,13 @@
   text-align: center;
   text-transform: capitalize;
   text-shadow: 0.3rem 0.3rem 0.3rem #000;
-  margin-top: -8%;
-  margin-bottom: 8%;
 }
 .section-2 .cards-container {
   display: flex;
   justify-content: space-evenly;
 }
 .section-2 .cards-container .card {
-  width: 20rem;
+  width: 30rem;
   background-color: #a79a2d;
   padding: 4rem;
   display: flex;
@@ -48,7 +46,7 @@
   text-shadow: 0.15rem 0.15rem 0.15rem #000;
 }
 .section-2 .cards-container .card .card-btn {
-  width: 90%;
+  width: 80%;
   background-color: #111;
   color: #888;
   border-radius: 5rem;
