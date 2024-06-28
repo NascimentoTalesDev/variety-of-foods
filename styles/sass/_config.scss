@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap');
 
-// Common Styles
-
 *{
     padding: 0;
     margin: 0;
@@ -10,9 +8,10 @@
     text-decoration: none;
     font-family: 'nunito', sans-serif;
     font-weight: 400;
+    scrollbar-width: thin;
+    scroll-behavior: smooth;
 }
+
 html{
     font-size: 62.5%; 
 }
-
-// End of Common Styles
