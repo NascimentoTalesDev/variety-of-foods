@@ -33,7 +33,7 @@
 <h4>Starting</h4>
 
 ```
-git clone https://github.com/Fernanda-Kipper/video-chat.git
+git clone https://github.com/NascimentoTalesDev/variety-of-foods.git
 ```
 
 <h4> Extensions to a better experience</h4>
